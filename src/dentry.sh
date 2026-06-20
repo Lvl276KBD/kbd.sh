@@ -41,20 +41,20 @@ mkdir -p "$ICON_DIR"
 EXEC=""
 
 if [[ "$FILE_PATH" == *.jar ]]; then
-    EXEC="java -jar $FILE_PATH"
+    EXEC="java -jar \"$FILE_PATH\""
 
 elif [[ "$FILE_PATH" == *.sh ]]; then
-    EXEC="bash $FILE_PATH"
+    EXEC="bash \"$FILE_PATH\""
 
 elif [[ "$FILE_PATH" == *.AppImage ]]; then
     chmod +x "$FILE_PATH" 2>/dev/null
-    EXEC="$FILE_PATH"
+    EXEC="\"$FILE_PATH\""
 
 elif [[ "$FILE_PATH" == *.py ]]; then
-    EXEC="python3 $FILE_PATH"
+    EXEC="python3 \"$FILE_PATH\""
 
 else
-    EXEC="$FILE_PATH"
+    EXEC="\"$FILE_PATH\""
 fi
 
 # Icon handling
