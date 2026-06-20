@@ -50,6 +50,9 @@ elif [[ "$FILE_PATH" == *.AppImage ]]; then
     chmod +x "$FILE_PATH" 2>/dev/null
     EXEC="$FILE_PATH"
 
+elif [[ "$FILE_PATH" == *.py ]]; then
+    EXEC="python3 $FILE_PATH"
+
 else
     EXEC="$FILE_PATH"
 fi
