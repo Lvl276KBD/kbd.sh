@@ -23,18 +23,17 @@ It supports automatic execution handling for:
 - **Java (`.jar`)** → `java -jar file.jar`  
 - **AppImage (`.AppImage`)** → executable binary  
 - **Python (`.py`)** → `python3 script.py`
-
+- **Websites** → `xdg-open https://test.com`
 
 ## ❤︎ Features
 
-- App name input  
-- FZF-based file picker  
-- Automatic execution type detection  
-- Icon name validation  
-- Overwrite capability of existing entries  
-- Category + Comment support  
-- Terminal support  
-
+- FZF-based file picker
+- File type detection
+- Error handling / validation
+- Overwrite capability
+- Category + Comment tags  
+- Run in Terminal
+- Website support
 
 ## ❤︎ Dependencies
 
@@ -45,7 +44,7 @@ Make sure these are installed:
 - `findutils`
 - `realpath`
 - `chmod`
-
+- 'xdg-utils'
 
 ## ❤︎ Directory structure
 
